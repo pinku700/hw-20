@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.list ul li{
+    display: inline-block;
+}
+nav{
+    background-color: rgb(235, 140, 72);
+}
+nav .container .row{
+    justify-content: space-between;
+    padding: 20px 0 10px 0;
+}
+.menu span{
+    font-size: 30px;
+    color: rgb(128, 0, 0);
+    cursor: pointer;
+}
+.logo span{
+    font-size: 30px;
+    color: rgb(128, 0, 0);
+    cursor: pointer;
+}
+.list ul li{
+    padding: 0 35px 0 0;
+    font-size: 25px;
+}
+.list ul li a{
+    color: rgb(128, 0, 0);
+    position: relative;
+}
+.list ul li a::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: rgb(128, 0, 0);
+    bottom: -17px;
+    transition: 0.5s;
+}
+.list ul li a:hover::before{
+   width: 100%;
+}
+.search input{
+    padding: 8px 20px 8px 8px;
+   
+}
+.search{
+    position: relative;
+}
+.search span{
+    position: absolute;
+    bottom: 6px;
+    left: 170px;
+    color: darkgrey;
+}
+.mode span{
+    font-size: 25px;
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 30px;
+    text-align: center;
+}
+.mode{
+    height: 30px;
+    width: 30px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.mode .dark.active{
+   margin-top: -30px;
+}
+#image .container .row{
+    margin-top: 80px;
+}
+#image .container .row p{
+    font-size: 25px;
+    margin-top: 134px;
+    margin-left: 60px;
+    line-height: 40px;
+    color: rgb(128, 0, 0);
+}
+#image .container .row p span{
+    font-size: 40px;
+}
+#manu_list{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    height: 500px;
+    transform: translateX(100%);
+    transition: 0.5s;
+    position: fixed;
+    bottom: 76px;
+}
+#manu_list.activer{
+    transform: translateX(0%);
+}
+#manu_list span{
+    text-align: right;
+    margin-right: 60px;
+    margin-bottom: 50px;
+    color: #fff;
+
+}
+#manu_list ul li{
+    margin-right: 300px;
+    margin-bottom: 50px;
+    padding: 20px 0 0 0;
+}
+#manu_list ul{
+    background-color: rgb(128, 0, 0);
+    width: 70%;
+    margin-bottom: -19px;
+    margin-top: -88px;
+    height: 501px;
+}
+#manu_list ul li a{
+    color: #fff;
+    font-size: 30px;
+}
